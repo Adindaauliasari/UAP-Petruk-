@@ -8,6 +8,21 @@ int atas;
 string data{45};
 }T;
 
+int kosong() 
+{
+ if (T.atas == -1)
+ return 1;
+ else
+  return 0;
+}
+
+int penuh() 
+{
+ if (T.atas == 10-1)
+ return 1;
+ else 
+  return 0;
+}
 
 int main(){
 
