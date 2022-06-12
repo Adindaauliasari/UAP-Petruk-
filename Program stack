@@ -1,9 +1,22 @@
 #include <iostream>
 #include <stack>
-#include <queue>
 
 using namespace std;
+
+struct tumpukkan {
+int atas;
+string data{45};
+}T;
+
+
 int main(){
 
+stack<string>tumpukkan;
+int pil;
+string data;
 
+T.atas=-1;
+cout<< "\t\t\t\t\t <Selamat datang di program stack> " <<endl;
+cout<< "\t\t\t\t\t\t <Tumpukkan bungkus rokok>" <<endl;
+cout <<endl;
 }
