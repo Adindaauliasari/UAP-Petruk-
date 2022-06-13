@@ -16,7 +16,7 @@ int main(){
         cout<<"\t\t\t\t======= Sistem Antrian klinik harapan bunda====="<<endl;
         cout << endl;
         cout<<"\t\t\t\t======================================================="<<endl;
-        cout<<"\t\t\t\t\t 1. Push (masukan nomor  )"<<endl;
+        cout<<"\t\t\t\t\t 1. Push (masukan nomor antrian )"<<endl;
         cout<<"\t\t\t\t\t 2. Pop (menghapus nomor antrian pertama)"<<endl;
         cout<<"\t\t\t\t\t 3. Melihat nomor antrian"<<endl;
         cout<<"\t\t\t\t\t 4. Hapus"<<endl;
