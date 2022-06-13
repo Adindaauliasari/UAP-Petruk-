@@ -34,4 +34,11 @@ T.atas=-1;
 cout<< "\t\t\t\t\t <Selamat datang di program stack> " <<endl;
 cout<< "\t\t\t\t\t\t <Tumpukkan bungkus rokok>" <<endl;
 cout <<endl;
+
+void input (string data){
+if (kosong()==1){
+T.atas++;
+cout << "Bungkus rokok " << T.data[T.atas]<< " masuk ke stack\n;
+}
+
 }
