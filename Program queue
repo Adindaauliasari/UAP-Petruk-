@@ -3,42 +3,14 @@
 
 using namespace std;
 
-struct tumpukkan {
-int atas;
-string data{45};
-}T;
-
-int kosong() 
-{
- if (T.atas == -1)
- return 1;
- else
-  return 0;
-}
-
-int penuh() 
-{
- if (T.atas == 10-1)
- return 1;
- else 
-  return 0;
-}
-
 int main(){
+	queue <string> antrian;
+	int pilih;
+	string input;
+	string nama;
 
-stack<string>tumpukkan;
-int pil;
-string data;
-
-T.atas=-1;
-cout<< "\t\t\t\t\t <Selamat datang di program stack> " <<endl;
-cout<< "\t\t\t\t\t\t <Tumpukkan bungkus rokok>" <<endl;
-cout <<endl;
-
-void input (string data){
-if (kosong()==1){
-T.atas++;
-cout << "Bungkus rokok " << T.data[T.atas]<< " masuk ke stack\n;
-}
-
-}
+	do{
+		cout << endl;
+      //  cout<<"================================================="<<endl;
+        cout<<"\t\t\t\t======= Sistem Antrian klinik harapan bunda====="<<endl;
+        cout << endl;
