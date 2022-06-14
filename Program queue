@@ -16,8 +16,23 @@ int main(){
         cout<<"\t\t\t\t======= Sistem Antrian klinik harapan bunda====="<<endl;
         cout << endl;
         cout<<"\t\t\t\t======================================================="<<endl;
-        cout<<"\t\t\t\t\t 1. Push (masukan nomor antrian )"<<endl;
+        cout<<"\t\t\t\t\t 1. Push (masukan nama dan nomor antrian )"<<endl;
         cout<<"\t\t\t\t\t 2. Pop (menghapus nomor antrian pertama)"<<endl;
         cout<<"\t\t\t\t\t 3. Melihat nomor antrian"<<endl;
         cout<<"\t\t\t\t\t 4. Hapus"<<endl;
+	cout<<"\t\t\t\t\t 5. Keluar"<<endl;
         cout<<"\t\t\t\t======================================================="<<endl;	
+	
+	cout <<"Masukan Pilihan (1-4) : ";
+	cin >> pilih;
+	cout << endl;
+		
+	switch (pilih){		//percabangan switch case
+	case 1:
+	cout << "Masukkan nama anda = ";
+	cin>> nama;
+	cout <<"Masukan nomor Antrian : ";
+	cin >> input;
+	antrian.push(input);
+	cout <<endl;
+	            system("cls");
