@@ -40,7 +40,7 @@ int main(){
 
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout<<"\t\t\t\t\t             Klinik harapan bunda    "<< endl;
-	cout<<"\t\t\t\t\t           JL.Flamboyan Bern,Swiss "<< endl;
+	cout<<"\t\t\t\t\t        JL.Flamboyan, Kecamatan Putri ayu " << endl;
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout<<  "\t\t\t\t\t\t Pasien atas nama : " << nama <<endl;
 	cout << endl;
