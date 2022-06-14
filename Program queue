@@ -23,7 +23,7 @@ int main(){
 	cout<<"\t\t\t\t\t 5. Keluar"<<endl;
         cout<<"\t\t\t\t======================================================="<<endl;	
 	
-	cout <<"Masukan Pilihan (1-4) : ";
+	cout <<"Masukan Pilihan (1-5) : ";
 	cin >> pilih;
 	cout << endl;
 		
