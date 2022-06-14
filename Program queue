@@ -48,3 +48,18 @@ int main(){
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout <<endl;
 
+        break;
+				
+	case 2:
+	if (antrian.empty()){		//kondisi jika data masih kosong
+	cout <<">>>>>Tidak ada antrian<<<<<<" ;
+	}else{
+	cout <<"Data Antrian ["<<antrian.front() <<"] telah di ambil" <<endl;
+	antrian.pop();
+	}
+	cout <<endl;
+	break;
+
+
+
+}
