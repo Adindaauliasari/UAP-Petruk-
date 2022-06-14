@@ -16,10 +16,10 @@ int main(){
         cout<<"\t\t\t\t======= Sistem Antrian klinik harapan bunda====="<<endl;
         cout << endl;
         cout<<"\t\t\t\t======================================================="<<endl;
-        cout<<"\t\t\t\t\t 1. Push (masukan nama dan nomor antrian )"<<endl;
-        cout<<"\t\t\t\t\t 2. Pop (menghapus nomor antrian pertama)"<<endl;
+        cout<<"\t\t\t\t\t 1. Tambah data antrian pasien "<<endl;
+        cout<<"\t\t\t\t\t 2. Panggil antrian pasien"<<endl;
         cout<<"\t\t\t\t\t 3. Melihat nomor antrian"<<endl;
-        cout<<"\t\t\t\t\t 4. Hapus"<<endl;
+        cout<<"\t\t\t\t\t 4. Hapus nomor antrian"<<endl;
 	cout<<"\t\t\t\t\t 5. Keluar"<<endl;
         cout<<"\t\t\t\t======================================================="<<endl;	
 	
@@ -29,19 +29,23 @@ int main(){
 		
 	switch (pilih){		//percabangan switch case
 	case 1:
-	cout << "Masukkan nama anda = ";
+	cout << "Masukkan nama pasien : ";
 	cin>> nama;
-	cout <<"Masukan nomor Antrian : ";
+	cout <<"Masukan nomor Antrian  ";
 	cin >> input;
 	antrian.push(input);
 	cout <<endl;
 	system("cls");
 	
+
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
-	cout <<endl;
-	cout<<  "\t\t\t\t\t\t Nama Anda          : " << nama <<endl;
+	cout<<"\t\t\t\t\t             Klinik harapan bunda    "<< endl;
+	cout<<"\t\t\t\t\t           JL.Flamboyan Bern,Swiss "<< endl;
+	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
+	cout<<  "\t\t\t\t\t\t Pasien atas nama : " << nama <<endl;
 	cout << endl;
-	cout << "\t\t\t\t\t\t Nomor antrian Anda : ["<<input <<"]"<< endl;
+	cout << "\t\t\t\t\t\t Nomor antrian Anda  "<< endl;
+	cout << "\t\t\t\t\t\t\t["<<input <<"] "<<endl;
 	cout <<endl;
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout <<"\t\t\t\t Silahkan menunggu sampai nomor antrian anda dipanggil"<< endl;
@@ -52,12 +56,13 @@ int main(){
 				
 	case 2:
 	if (antrian.empty()){		//kondisi jika data masih kosong
-	cout <<">>>>>Tidak ada antrian<<<<<<" ;
+	cout <<">>>>>Tidak ada  nomor antrian yang masuk <<<<<<" ;
 	}else{
-	cout <<"Data Antrian ["<<antrian.front() <<"] telah di ambil" <<endl;
+	cout <<"nomor Antrian ["<<antrian.front() <<"] telah di panggil" <<endl;
 	antrian.pop();
 	}
 	cout <<endl;
+	
 	break;
 
 
