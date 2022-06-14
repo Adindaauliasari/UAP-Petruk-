@@ -35,4 +35,16 @@ int main(){
 	cin >> input;
 	antrian.push(input);
 	cout <<endl;
-	            system("cls");
+	system("cls");
+	
+	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
+	cout <<endl;
+	cout<<  "\t\t\t\t\t\t Nama Anda          : " << nama <<endl;
+	cout << endl;
+	cout << "\t\t\t\t\t\t Nomor antrian Anda : ["<<input <<"]"<< endl;
+	cout <<endl;
+	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
+	cout <<"\t\t\t\t Silahkan menunggu sampai nomor antrian anda dipanggil"<< endl;
+	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
+	cout <<endl;
+
