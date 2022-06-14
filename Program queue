@@ -78,8 +78,8 @@ int main(){
 					break;
 	    	case 5:
 				system("CLS");
-				 cout << "\t\t\t\t < Terimakasih sudah mengantri di Klinik Harapan Bunda :) > " << endl;
-				 
-	}
+				 cout << "\t\t\t\t < Terimakasih sudah mengantri di Klinik Harapan Bunda :) > " << endl;			 
+		}
+	}while (pilih >=1 && pilih <=4);
 }
 
