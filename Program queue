@@ -69,7 +69,6 @@ int main(){
 	if(!antrian.empty()){			//kondisi jika data masih kosong
 	while (!antrian.empty()){
 	cout <<"["<<antrian.front() <<"] ";
-	cout<< "Nama Pasien : "<<nama<<endl;
 	antrian.pop();}
 
 
