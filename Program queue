@@ -14,7 +14,7 @@ int main(){
 	system("color E5");
 	cout << endl;
     
-        cout<<"\t\t\t\t======= Sistem Antrian klinik harapan bunda====="<<endl;
+        cout<<"\t\t\t\t======= Sistem Antrian Klinik Harapan Bunda====="<<endl;
         cout << endl;
         cout<<"\t\t\t\t======================================================="<<endl;
         cout<<"\t\t\t\t\t 1. Tambah data antrian pasien "<<endl;
@@ -40,8 +40,8 @@ int main(){
 	
 
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
-	cout<<"\t\t\t\t\t             Klinik harapan bunda    "<< endl;
-	cout<<"\t\t\t\t\t        JL.Flamboyan, Kecamatan Putri ayu " << endl;
+	cout<<"\t\t\t\t\t             Klinik Harapan Bunda    "<< endl;
+	cout<<"\t\t\t\t\t        JL.Flamboyan, Kecamatan Putri Ayu " << endl;
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout<<  "\t\t\t\t\t\t Pasien atas nama : " << nama <<endl;
 	cout << endl;
@@ -68,29 +68,34 @@ int main(){
 	
 	case 3:
 	if(!antrian.empty()){			//kondisi jika data masih kosong
-	
-	while (!antrian.empty()){
-	
-	cout<<  "\t\t\t\t\t\t  Pasien atas nama : " << nama <<endl;
-	cout << endl;
-	cout << "\t\t\t\t\t\t Nomor antrian Anda : "<< endl;
+		while (!antrian.empty()){
+		cout << endl;
+	cout << "\t\t\t\t\t\t Nomor antrian Anda "<< endl;
 	cout << "\t\t\t\t\t\t\t["<<input <<"] "<<endl;
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout <<endl;
-	antrian.pop();
-	
-	}else{
-            	cout <<">>>>> Tidak ada antrian <<<<<<" ;
-			}
-			break;
+	antrian.pop();}
+							
+		}else 
+	 {
+	cout<<"\t\t\t\t ______________________________________________________"<< endl;
+        cout <<"\t\t\t\t\t     >>>>> Tidak ada antrian <<<<<<"<< endl; 
+        cout<<"\t\t\t\t ------------------------------------------------------"<< endl;
+        cout <<endl;
+	        }
+	break;
+
 	case 4:
 	system("CLS");
 	break;
 	
-	    	case 5:
-				system("CLS");
-				 cout << "\t\t\t\t < Terimakasih sudah mengantri di Klinik Harapan Bunda :) > " << endl;			 
-		}
+	case 5:
+	system("CLS");
+	cout << endl;
+	cout<< endl;
+        cout << "\t\t\t\t < Terimakasih Atas Kunjungan Anda > " << endl;			 
+	       }
+		
 	}while (pilih >=1 && pilih <=4);
 }
 
