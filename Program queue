@@ -82,9 +82,10 @@ int main(){
             	cout <<">>>>> Tidak ada antrian <<<<<<" ;
 			}
 			break;
-		case 4:
-				system("CLS");
-					break;
+	case 4:
+	system("CLS");
+	break;
+	
 	    	case 5:
 				system("CLS");
 				 cout << "\t\t\t\t < Terimakasih sudah mengantri di Klinik Harapan Bunda :) > " << endl;			 
