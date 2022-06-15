@@ -14,7 +14,7 @@ int main(){
 	system("color E5");
 	cout << endl;
     
-        cout<<"\t\t\t\t======= Sistem Antrian Klinik Harapan Bunda====="<<endl;
+        cout<<"\t\t\t\t========= Sistem Antrian Klinik Harapan Bunda========="<<endl;
         cout << endl;
         cout<<"\t\t\t\t======================================================="<<endl;
         cout<<"\t\t\t\t\t 1. Tambah data antrian pasien "<<endl;
@@ -32,7 +32,7 @@ int main(){
 	case 1:
 	cout << "Masukkan nama pasien : ";
 	cin>> nama;
-	cout <<"Masukan nomor Antrian  ";
+	cout <<"Masukan nomor Antrian : ";
 	cin >> input;
 	antrian.push(input);
 	cout <<endl;
@@ -45,8 +45,8 @@ int main(){
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout<<  "\t\t\t\t\t\t Pasien atas nama : " << nama <<endl;
 	cout << endl;
-	cout << "\t\t\t\t\t\t Nomor antrian Anda  "<< endl;
-	cout << "\t\t\t\t\t\t\t["<<input <<"] "<<endl;
+	cout << "\t\t\t\t\t\t   Nomor antrian   "<< endl;
+	cout << "\t\t\t\t\t\t\t ["<<input <<"] "<<endl;
 	cout <<endl;
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout <<"\t\t\t\t Silahkan menunggu sampai nomor antrian anda dipanggil"<< endl;
@@ -57,21 +57,25 @@ int main(){
 				
 	case 2:
 	if (antrian.empty()){		//kondisi jika data masih kosong
-	cout <<">>>>>Tidak ada  nomor antrian yang masuk <<<<<<" ;
+	cout<<"\t\t\t\t ______________________________________________________"<< endl;
+	cout <<"\t\t\t\t\t >>> Tidak ada nomor antrian yang masuk <<<"<<endl ;
+	cout<<"\t\t\t\t ------------------------------------------------------"<< endl;
 	}else{
-	cout <<"nomor Antrian ["<<antrian.front() <<"] telah di panggil" <<endl;
+	system("CLS");
+	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
+	cout <<"\t\t\t\t\t   Nomor Antrian ["<<antrian.front() <<"] telah di panggil" <<endl;
+	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	antrian.pop();
-	}
+	   }
 	cout <<endl;
-	
 	break;
 	
 	case 3:
 	if(!antrian.empty()){			//kondisi jika data masih kosong
-		while (!antrian.empty()){
-		cout << endl;
-	cout << "\t\t\t\t\t\t Nomor antrian Anda "<< endl;
-	cout << "\t\t\t\t\t\t\t["<<input <<"] "<<endl;
+	   while (!antrian.empty()){
+	cout << endl;
+	cout << "\t\t\t\t\t\t Nomor antrian tersisa"<< endl;
+	cout << "\t\t\t\t\t\t\t ["<<antrian.front() <<"] "<<endl;
 	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
 	cout <<endl;
 	antrian.pop();}
@@ -92,7 +96,6 @@ int main(){
 	case 5:
 	system("CLS");
 	cout << endl;
-	cout<< endl;
         cout << "\t\t\t\t < Terimakasih Atas Kunjungan Anda > " << endl;			 
 	       }
 		
