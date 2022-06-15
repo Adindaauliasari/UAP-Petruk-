@@ -11,6 +11,7 @@ int main(){
 	string nama;
 
 	do{
+	system("color E5");
 	cout << endl;
     
         cout<<"\t\t\t\t======= Sistem Antrian klinik harapan bunda====="<<endl;
