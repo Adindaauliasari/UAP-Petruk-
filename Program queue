@@ -67,9 +67,18 @@ int main(){
 	
 	case 3:
 	if(!antrian.empty()){			//kondisi jika data masih kosong
+	
 	while (!antrian.empty()){
-	cout <<"["<<antrian.front() <<"] ";
-	antrian.pop();}else{
+	
+	cout<<  "\t\t\t\t\t\t  Pasien atas nama : " << nama <<endl;
+	cout << endl;
+	cout << "\t\t\t\t\t\t Nomor antrian Anda : "<< endl;
+	cout << "\t\t\t\t\t\t\t["<<input <<"] "<<endl;
+	cout<<"\t\t\t\t-------------------------------------------------------"<< endl;
+	cout <<endl;
+	antrian.pop();
+	
+	}else{
             	cout <<">>>>> Tidak ada antrian <<<<<<" ;
 			}
 			break;
